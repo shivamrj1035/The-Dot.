@@ -1,0 +1,173 @@
+.footer {
+    background: #000;
+    padding: 120px 20px 60px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contactInterface {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.heading span {
+    color: var(--accent);
+}
+
+.desc {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    margin-bottom: 40px;
+    max-width: 450px;
+}
+
+.directActions {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.waButton,
+.meetingButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.waButton {
+    background: #25D366;
+    color: #fff;
+    border: none;
+}
+
+.meetingButton {
+    background: #fff;
+    color: #000;
+    border: none;
+}
+
+.waButton:hover,
+.meetingButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: #fff;
+    font-family: inherit;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(0, 242, 255, 0.05);
+}
+
+.sendButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px;
+    background: var(--accent);
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sendButton:hover {
+    background: #fff;
+    transform: scale(1.02);
+}
+
+.bottom {
+    border-top: 1px solid var(--glass-border);
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.brand p {
+    opacity: 0.4;
+    font-size: 0.85rem;
+}
+
+.contactLinks {
+    display: flex;
+    gap: 40px;
+}
+
+.contactLinks a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.6;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.contactLinks a:hover {
+    opacity: 1;
+    color: var(--accent);
+}
+
+@media (max-width: 992px) {
+    .contactInterface {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .contactLinks {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
