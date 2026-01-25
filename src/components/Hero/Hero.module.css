@@ -55,7 +55,8 @@
     font-weight: 800;
     letter-spacing: -2px;
     margin-bottom: 0.5rem;
-    background: linear-gradient(180deg, var(--foreground) 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(180deg, #0f172a 0%, #475569 100%);
+    /* Slate 900 to Slate 600 */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

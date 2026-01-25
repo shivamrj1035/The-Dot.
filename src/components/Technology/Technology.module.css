@@ -1,5 +1,5 @@
 .technology {
-    background: #000;
+    background: var(--background);
     padding: 120px 20px;
 }
 

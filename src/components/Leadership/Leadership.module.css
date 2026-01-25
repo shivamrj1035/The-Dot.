@@ -1,5 +1,5 @@
 .leadership {
-    background: #000;
+    background: var(--background);
     overflow: hidden;
 }
 
