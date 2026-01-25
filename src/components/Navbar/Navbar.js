@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 import { Menu, X } from 'lucide-react';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const links = [
     { name: 'About', href: '#about' },
@@ -46,9 +47,12 @@ export default function Navbar() {
                     </a>
                 </div>
 
-                <button className={styles.mobileMenu} onClick={() => setIsOpen(!isOpen)}>
-                    {isOpen ? <X /> : <Menu />}
-                </button>
+                <div className={styles.navActions}>
+                    <ThemeToggle />
+                    <button className={styles.mobileMenu} onClick={() => setIsOpen(!isOpen)}>
+                        {isOpen ? <X /> : <Menu />}
+                    </button>
+                </div>
             </div>
         </nav>
     );

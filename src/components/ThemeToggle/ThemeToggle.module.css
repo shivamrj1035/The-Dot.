@@ -1,0 +1,31 @@
+.toggle {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--foreground);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: rotate(15deg) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.15);
+}
+
+[data-theme='dark'] .toggle {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .toggle:hover {
+    box-shadow: 0 6px 20px rgba(0, 242, 255, 0.2);
+}

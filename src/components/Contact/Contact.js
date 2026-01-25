@@ -14,7 +14,7 @@ export default function Contact() {
 
     const handleMeeting = () => {
         // Replace with actual Calendly link
-        window.open('https://calendly.com/your-dot-link', '_blank');
+        window.open('https://calendar.app.google/UWaUDEkmhbCb5KEX7', '_blank');
     };
 
     const handleSubmit = (e) => {

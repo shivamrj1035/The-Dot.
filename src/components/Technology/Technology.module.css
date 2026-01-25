@@ -29,15 +29,22 @@
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     padding: 40px;
-    border-radius: 12px;
+    border-radius: 16px;
     transition: all 0.4s ease;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: var(--card-shadow);
 }
 
 .techCard:hover {
     border-color: var(--accent);
-    background: rgba(0, 242, 255, 0.05);
+    background: var(--accent-muted);
     transform: translateY(-5px);
+    box-shadow: 0 12px 48px rgba(0, 102, 204, 0.12);
+}
+
+[data-theme='dark'] .techCard:hover {
+    box-shadow: 0 12px 48px rgba(0, 242, 255, 0.15);
 }
 
 .categoryTitle {
@@ -54,12 +61,12 @@
 }
 
 .badge {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--surface);
     padding: 8px 16px;
     border-radius: 100px;
     font-size: 0.85rem;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
     transition: all 0.3s ease;
 }
 

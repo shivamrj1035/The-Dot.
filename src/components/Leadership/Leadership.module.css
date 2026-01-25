@@ -44,7 +44,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
-    background: #111;
+    background: var(--surface);
     position: relative;
     z-index: 2;
 }
@@ -52,7 +52,7 @@
 .avatarPlaceholder {
     width: 100%;
     height: 100%;
-    background: #111;
+    background: var(--surface);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -146,10 +146,31 @@
     margin-top: 20px;
 }
 
+.nameWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
 .name {
     font-size: 2rem;
-    margin-bottom: 8px;
+    margin-bottom: 0;
     transition: color 0.3s ease;
+}
+
+.websiteLink {
+    color: var(--accent);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.websiteLink:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .leaderCard:hover .name {

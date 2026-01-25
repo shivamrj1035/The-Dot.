@@ -10,9 +10,21 @@
 
 .scrolled {
     padding: 15px 0;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(15px);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-bottom: 1px solid var(--glass-border);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme='dark'] .scrolled {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .container {
@@ -88,7 +100,7 @@
     display: none;
     background: none;
     border: none;
-    color: #fff;
+    color: var(--foreground);
     cursor: pointer;
 }
 
@@ -104,7 +116,7 @@
         right: -100%;
         width: 80%;
         height: 100vh;
-        background: #000;
+        background: var(--background);
         flex-direction: column;
         justify-content: center;
         transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);

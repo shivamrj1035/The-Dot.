@@ -2,16 +2,19 @@
 
 import styles from './Leadership.module.css';
 import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
 
 const leaders = [
     {
         name: 'Darshan Soni',
+        website: 'https://www.linkedin.com/in/darshan-rojasara-768192243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByNE1DlyOQWeRfoYgIIchkA%3D%3D',
         role: 'CEO & Founder',
         initial: 'D',
-        image: null // To be provided later
+        image: '/DarshanRojasara.jpg'
     },
     {
         name: 'Shivam Jayswal',
+        website: 'https://shivamrj1035.github.io/shivam-ai-persona/',
         role: 'CTO',
         initial: 'S',
         image: '/ShivamJayswal.png'
@@ -50,7 +53,20 @@ export default function Leadership() {
                             )}
                         </div>
                         <div className={styles.info}>
-                            <h3 className={styles.name}>{leader.name}</h3>
+                            <div className={styles.nameWrapper}>
+                                <h3 className={styles.name}>{leader.name}</h3>
+                                {leader.website && (
+                                    <a
+                                        href={leader.website}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.websiteLink}
+                                        title="Visit Website"
+                                    >
+                                        <ExternalLink size={18} />
+                                    </a>
+                                )}
+                            </div>
                             <p className={styles.role}>{leader.role}</p>
                         </div>
                     </div>
