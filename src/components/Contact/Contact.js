@@ -14,7 +14,7 @@ export default function Contact() {
 
     const handleMeeting = () => {
         // Replace with actual Calendly link
-        window.open('https://calendar.app.google/UWaUDEkmhbCb5KEX7', '_blank');
+        window.open('https://calendly.com/d-s-rojasara111/new-meeting', '_blank');
     };
 
     const handleSubmit = (e) => {
