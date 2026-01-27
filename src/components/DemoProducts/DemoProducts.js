@@ -3,10 +3,40 @@ import { ExternalLink, Eye } from 'lucide-react';
 
 const products = [
     {
-        title: 'Aquaara Water Bottle Advertisement',
-        description: 'A premium, modern ecommerce experience for high-quality hydration product Water Bottles.',
-        url: 'https://shivamrj1035.github.io/Aquaara-Water-Bottle/',
-        tags: ['Ecommerce Advertisement', 'UI/UX', 'React']
+        "title": "Aquaara – Water Bottle Product Showcase",
+        "description": "A modern product showcase and advertisement website for Aquaara water bottles, built with a clean UI/UX design to present product features, branding, and a premium ecommerce-style experience.",
+        "url": "https://shivamrj1035.github.io/Aquaara-Water-Bottle/",
+        "tags": ["Product Showcase", "Ecommerce UI", "React", "UI/UX", "Frontend Development", "Branding"]
+    },
+    {
+        "title": "Property Purchase Management System",
+        "description": "A web app for tracking your home buying financial journey with features like funding sources, EMI tracking, reminders, analytics and comprehensive reports to help manage your home purchase process.",
+        "url": "https://purchase-management-webapp.vercel.app/",
+        "tags": ["finance", "management", "home purchase", "EMI", "analytics"]
+    },
+    {
+        "title": "CrackIT – Interview Preparation Companion (inferred)",
+        "description": "CrackIT appears to be an AI-powered interview preparation application designed to help users practice technical interview questions and track progress across topics like DSA, OS, CN, and more. (Live site couldn’t be fetched, description inferred from project context.)",
+        "url": "https://crack-it-eight.vercel.app/",
+        "tags": ["interview prep", "AI tool", "education", "coding practice", "tech learning"]
+    },
+    {
+        "title": "True Shine Cleaning & Gardening Facilities",
+        "description": "Professional cleaning and gardening services offered in Gold Coast & Brisbane. Services include eco-friendly residential and commercial cleaning, lawn maintenance, and property care.",
+        "url": "http://Trueshine.info",
+        "tags": ["cleaning", "gardening", "services", "property care", "eco-friendly"]
+    },
+    {
+        "title": "Expense Tracker (MERN App)",
+        "description": "An expense tracking web application (likely built with the MERN stack) for managing personal expenses, budgeting, and financial tracking — deployed on Netlify.",
+        "url": "https://expense-tracking-mernapp.netlify.app",
+        "tags": ["expense tracking", "budgeting", "MERN", "finance", "personal finance"]
+    },
+    {
+        "title": "AI Image Generator (React App)",
+        "description": "A React-based AI image generator web application deployed on Netlify, likely offering tools for generating images using AI models from user prompts.",
+        "url": "https://ai-image-generator-reactapp.netlify.app/",
+        "tags": ["AI", "image generation", "React", "creative tools", "machine learning"]
     }
 ];
 
