@@ -12,13 +12,13 @@ const leaders = [
         initial: 'D',
         image: '/DarshanRojasara.jpg'
     },
-    {
-        name: 'Shivam Jayswal',
-        website: 'https://shivamrj1035.github.io/shivam-ai-persona/',
-        role: 'CTO',
-        initial: 'S',
-        image: '/ShivamJayswal.png'
-    }
+    // {
+    //     name: 'Shivam Jayswal',
+    //     website: 'https://shivamrj1035.github.io/shivam-ai-persona/',
+    //     role: 'CTO',
+    //     initial: 'S',
+    //     image: '/ShivamJayswal.png'
+    // }
 ];
 
 export default function Leadership() {
