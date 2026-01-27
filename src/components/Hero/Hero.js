@@ -2,7 +2,7 @@ import styles from './Hero.module.css';
 
 export default function Hero() {
     return (
-        <section className={styles.hero}>
+        <section id="hero" className={styles.hero}>
             <div className={styles.visualStack}>
                 <div className={styles.theDot} data-narrative-dot></div>
                 <div className={styles.theLine} data-narrative-line></div>

@@ -6,10 +6,10 @@ import { Menu, X } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const links = [
-    { name: 'About', href: '#about' },
+    { name: 'Home', href: '#hero' },
     { name: 'Services', href: '#services' },
+    { name: 'Demo Products', href: '#products' },
     { name: 'Technology', href: '#technology' },
-    { name: 'AI Lab', href: '#lab' },
     { name: 'Leadership', href: '#leadership' },
     { name: 'Contact', href: '#contact' },
 ];
@@ -29,7 +29,9 @@ export default function Navbar() {
     return (
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
-                <div className={styles.logo}>The Dot<span>.</span></div>
+                <a href="#hero">
+                    <div className={styles.logo}>The Dot<span>.</span></div>
+                </a>
 
                 <div className={`${styles.links} ${isOpen ? styles.active : ''}`}>
                     {links.map((link) => (

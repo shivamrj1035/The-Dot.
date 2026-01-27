@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import Services from "@/components/Services/Services";
 import Technology from "@/components/Technology/Technology";
+import DemoProducts from "@/components/DemoProducts/DemoProducts";
 import Leadership from "@/components/Leadership/Leadership";
 import Contact from "@/components/Contact/Contact";
 import { useGSAPAnimations } from "@/utils/animations";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <DemoProducts />
       <Technology />
       <Leadership />
       <Contact />
