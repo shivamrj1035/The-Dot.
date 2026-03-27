@@ -124,11 +124,16 @@
     align-items: center;
 }
 
-.logo {
-    font-family: var(--font-primary);
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 5px;
+.footerLogo {
+    height: 35px;
+    width: auto;
+    color: var(--foreground);
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.footerLogo:hover {
+    opacity: 0.8;
 }
 
 .brand p {

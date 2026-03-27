@@ -1,0 +1,18 @@
+<svg 
+  width="32" 
+  height="32" 
+  viewBox="0 0 100 100" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg"
+>
+  {/* The stylized O / Dot from the logo */}
+  <circle cx="50" cy="50" r="22" stroke="#0ea5e9" strokeWidth="10" fill="none" />
+  <circle cx="50" cy="50" r="8" fill="#0ea5e9" />
+  
+  {/* Bubbles / Dots around it */}
+  <circle cx="80" cy="30" r="6" fill="#0ea5e9" />
+  <circle cx="90" cy="50" r="10" fill="#0ea5e9" />
+  <circle cx="75" cy="70" r="8" fill="#0ea5e9" />
+  <circle cx="30" cy="25" r="5" fill="#0ea5e9" />
+  <circle cx="20" cy="45" r="3" fill="#0ea5e9" />
+</svg>

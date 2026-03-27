@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import Logo from '../Logo/Logo';
 
 const links = [
     { name: 'Home', href: '#hero' },
@@ -29,8 +30,8 @@ export default function Navbar() {
     return (
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
-                <a href="#hero">
-                    <div className={styles.logo}>The Dot<span>.</span></div>
+                <a href="#hero" className={styles.logoLink}>
+                    <Logo className={styles.logoSvg} />
                 </a>
 
                 <div className={`${styles.links} ${isOpen ? styles.active : ''}`}>

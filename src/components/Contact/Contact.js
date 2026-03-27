@@ -4,6 +4,7 @@ import { useState, useRef } from 'react';
 import styles from './Contact.module.css';
 import { MessageSquare, Calendar, Mail, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import Logo from '../Logo/Logo';
 
 export default function Contact() {
     const form = useRef();
@@ -158,7 +159,7 @@ export default function Contact() {
 
                 <div className={styles.bottom} suppressHydrationWarning>
                     <div className={styles.brand}>
-                        <div className={styles.logo}>The Dot.</div>
+                        <Logo className={styles.footerLogo} width={150} height={40} />
                         <p>© 2026 The Dot. Intelligence, Solidified.</p>
                     </div>
                     <div className={styles.contactLinks}>

@@ -50,23 +50,18 @@
     opacity: 0;
 }
 
-.title {
-    font-size: 5rem;
-    font-weight: 800;
-    letter-spacing: -2px;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(180deg, #0f172a 0%, #475569 100%);
-    /* Slate 900 to Slate 600 */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.heroLogo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 2rem;
+    color: #0f172a; /* Slate 900 */
 }
 
-[data-theme='dark'] .title {
-    background: linear-gradient(180deg, #fff 0%, #888 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
+[data-theme='dark'] .heroLogo {
+    color: #ffffff;
 }
+
 
 .tagline {
     font-size: 1.5rem;

@@ -1,4 +1,5 @@
 import styles from './Hero.module.css';
+import Logo from '../Logo/Logo';
 
 export default function Hero() {
     return (
@@ -13,7 +14,7 @@ export default function Hero() {
             </div>
 
             <div className={styles.content} data-hero-content>
-                <h1 className={styles.title}>The Dot.</h1>
+                <Logo className={styles.heroLogo} width={400} height={100} />
                 <p className={styles.tagline}>IT ALL STARTS WITH THE DOT.</p>
                 <p className={styles.description}>Your Partner in Digital Excellence</p>
             </div>
