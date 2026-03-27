@@ -6,19 +6,26 @@ import { ExternalLink } from 'lucide-react';
 
 const leaders = [
     {
+        name: 'Shivam Jayswal',
+        website: 'https://shivamrj1035.github.io/shivam-ai-persona/',
+        role: 'Chief Executive Officer (CEO)',
+        initial: 'S',
+        image: '/ShivamJayswal.png'
+    },
+    {
+        name: 'Heet Chovatiya',
+        website: 'https://www.linkedin.com/in/heet-chovatiya-4680b9231/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYwEoYiZES0Ow038ncqVeag%3D%3D',
+        role: 'Chief Technical Officer (CTO)',
+        initial: 'H',
+        image: '/heet.png'
+    },
+    {
         name: 'Darshan Soni',
         website: 'https://www.linkedin.com/in/darshan-rojasara-768192243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByNE1DlyOQWeRfoYgIIchkA%3D%3D',
-        role: 'CEO & Founder',
+        role: 'Business Development Executive (BDE)',
         initial: 'D',
         image: '/DarshanRojasara.jpg'
     },
-    {
-        name: 'Shivam Jayswal',
-        website: 'https://shivamrj1035.github.io/shivam-ai-persona/',
-        role: 'CTO',
-        initial: 'S',
-        image: '/ShivamJayswal.png'
-    }
 ];
 
 export default function Leadership() {
