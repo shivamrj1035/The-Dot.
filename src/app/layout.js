@@ -1,14 +1,14 @@
 import "./globals.css";
 
 // Configure base URL for metadata, automatically resolving Vercel's environment variables
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'));
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` :
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'));
 
 export const metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "The Dot | Digital Excellence",
+    default: "The Dot",
     template: "%s | The Dot"
   },
   description: "Crafting digital excellence, one dot at a time. Specializing in Web Development, SMM, Photography, and AI solutions.",
@@ -22,7 +22,7 @@ export const metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "The Dot | Digital Excellence",
+    title: "The Dot",
     description: "Crafting digital excellence, one dot at a time. Specializing in Web Development, SMM, Photography, and AI solutions.",
     url: baseUrl,
     siteName: "The Dot",
@@ -39,10 +39,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Dot | Digital Excellence",
+    title: "The Dot",
     description: "Crafting digital excellence, one dot at a time. Web Development, SMM, Photography, and AI solutions.",
     images: ["/og-image.jpg"],
-    creator: "@thedot", 
+    creator: "@thedot",
   },
   robots: {
     index: true,
