@@ -5,17 +5,17 @@ import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
 
 const leaders = [
-    {
-        name: 'Shivam Jayswal',
-        website: 'https://shivamrj1035.github.io/shivam-ai-persona/',
-        role: 'Chief Executive Officer (CEO)',
-        initial: 'S',
-        image: '/ShivamJayswal.png'
-    },
+    // {
+    //     name: 'Shivam Jayswal',
+    //     website: 'https://shivamrj1035.github.io/shivam-ai-persona/',
+    //     role: 'Chief Executive Officer (CEO)',
+    //     initial: 'S',
+    //     image: '/ShivamJayswal.png'
+    // },
     {
         name: 'Heet Chovatiya',
         website: 'https://www.linkedin.com/in/heet-chovatiya-4680b9231/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYwEoYiZES0Ow038ncqVeag%3D%3D',
-        role: 'Chief Technical Officer (CTO)',
+        role: 'CEO & CTO',
         initial: 'H',
         image: '/heet.png'
     },
